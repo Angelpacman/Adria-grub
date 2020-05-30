@@ -1,0 +1,68 @@
+# Breeze GRUB theme
+#
+# 2015, Gustavo Castro < gustawho [at] gmail [dot] com >
+#
+# Some rights reserved. This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License.
+#
+
+desktop-image: "bggrub.jpg"
+
+title-text: ""
+#title-font: "DejaVu Regular 16"
+#title-color: "#fcfcfc"
+message-font: "Menlo Regular 14" #DejaVu
+message-color: "#fcfcfc"
+terminal-font: "Menlo Regular 16"  #DejaVu
+terminal-box: "terminal_*.png"
+
++ boot_menu {
+  left = 10%
+  width = 80%
+  top = 24%
+  height = 42%	#46
+
+  menu_pixmap_style = "boot_menu_*.png"
+
+  item_font = "Menlo Regular 14" #"DejaVu Regular 14"
+  item_color = "#4f0e89"  ##366c8d 3583b2 #4f0e89azulyera
+  item_height = 44
+  item_icon_space = 18 #antes 8
+  item_spacing = 2
+
+  selected_item_font = "Menlo Bold 14"
+  selected_item_color= "#fcfcfc"
+  selected_item_pixmap_style = "select_*.png"
+
+  icon_height = 34
+  icon_width = 34
+
+  scrollbar = true
+  scrollbar_width = 4
+  scrollbar_thumb = "slider_*.png"
+}
+
++ progress_bar {
+  id = "__timeout__"
+  left = 35%
+  width = 30%
+  top = 62%
+  height = 1%
+  show_text = false
+  text = ""
+  fg_color = "#1be881" ##3daee9 #verde52de97
+  bg_color = #31363b
+  border_color = #31363b
+  #highlight_style = "progress_highlight_*.png"
+}
+
+# Show an informational message.
++ hbox {
+    top = 100%-35
+    left = 20%
+    + label {text = "Enter: " font = "Sans 12" color = "#E6F3FF" align = "left"}
+    + label {text = "Boot Selection     " font = "Sans 12" color = "#f79400" align = "left"}
+    + label {text = "E: " font = "Sans 12" color = "#E6F3FF" align = "left"}
+    + label {text = "Edit Selection     " font = "Sans 12" color = "#f79400" align = "left"}
+    + label {text = "C: " font = "Sans 12" color = "#E6F3FF" align = "left"}
+    + label {text = "GRUB Commandline" font = "Sans 12" color = "#f79400" align = "left"}
+}
