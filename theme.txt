@@ -10,9 +10,9 @@ desktop-image: "bggrub.jpg"
 title-text: ""
 #title-font: "DejaVu Regular 16"
 #title-color: "#fcfcfc"
-message-font: "Menlo Regular 14" #DejaVu
+message-font: "DejaVu Regular 14" #DejaVu
 message-color: "#fcfcfc"
-terminal-font: "Menlo Regular 16"  #DejaVu
+terminal-font: "DejaVu Regular 16"  #DejaVu
 terminal-box: "terminal_*.png"
 
 + boot_menu {
@@ -23,13 +23,13 @@ terminal-box: "terminal_*.png"
 
   menu_pixmap_style = "boot_menu_*.png"
 
-  item_font = "Menlo Regular 14" #"DejaVu Regular 14"
+  item_font = "DejaVu Regular 14" #"DejaVu Regular 14"
   item_color = "#4f0e89"  ##366c8d 3583b2 #4f0e89azulyera
   item_height = 44
   item_icon_space = 18 #antes 8
   item_spacing = 2
 
-  selected_item_font = "Menlo Bold 14"
+  selected_item_font = "DejaVu Bold 14"
   selected_item_color= "#fcfcfc"
   selected_item_pixmap_style = "select_*.png"
 
